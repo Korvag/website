@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ben's Site - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"
+    />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/fav2sized.png">
+</head>
+
+<body>
+    <nav class="logbar">
+        <div class="container">
+            <div class="logo"><img src="images/fav2sized.png" alt="logo"></div>
+        </div>
+    </nav>
+
+    <div class="card text-center">
+        <h2>LOGIN</h2></br>
+        <form>
+            <div class="container">
+                <div class="login">
+                    <input type="email" id="email" placeholder="Enter your email" style="margin: 0 0 10px 0; background: #d2b4de; height: 25px; width: 100%;">
+                    <input type="password" id="password" placeholder="Enter your password" style="background: #d2b4de; height: 25px; width: 100%;"><br></br>
+                    <!--<button type="submit" class="btnLog" style="display: block; width: 90%; background: #34495e; color: #fff;">Login</button>-->
+                </div>
+            </div>
+        </form>
+        <div><button type="submit" class="btnLog" OnClick="loginFnc()">Login</button></div>
+    </div>
+
+    <div class="logfooter"></div>
+
+    <script>
+        function loginFnc() {
+            window.location.replace("index.html");
+        }
+    </script>
+</body>
+</html>
