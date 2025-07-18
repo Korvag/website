@@ -99,7 +99,8 @@ img {
     /* background: url('../images/hero-bg.png') no-repeat; */
     background-size: contain;
     background-position: center bottom;
-    height: 550px;
+    /*height: 550px;*/
+    height: auto;
 }
 
 .hero .hero-content {
@@ -319,6 +320,14 @@ img {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.container-dark {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background: black;
+    color: #fff;
 }
 
 /* Card */
