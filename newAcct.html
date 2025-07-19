@@ -28,29 +28,23 @@
     </nav>
 
     <div class="card text-center">
-        <h2>LOGIN</h2></br>
         <form>
             <div class="container">
                 <div class="login">
-                    <input type="email" id="email" placeholder="Enter your email" style="margin: 0 0 10px 0; background: #d2b4de; height: 25px; width: 100%;">
+                    <h4>Enter your Email:</h4>
+                    <input type="email" id="email" style="margin: 0 0 10px 0; background: #d2b4de; height: 25px; width: 100%;">
+                    <h4>Confirm your Email:</h4>
+                    <input type="email" id="email" style="margin: 0 0 10px 0; background: #d2b4de; height: 25px; width: 100%;">
+                    <h4>Choose a password:</h4>
                     <input type="password" id="password" placeholder="Enter your password" style="background: #d2b4de; height: 25px; width: 100%;"><br></br>
-                    <!--<button type="submit" class="btnLog" style="display: block; width: 90%; background: #34495e; color: #fff;">Login</button>-->
+                    <h4>Confirm your password:</h4>
+                    <input type="password" id="password" placeholder="Enter your password" style="background: #d2b4de; height: 25px; width: 100%;"><br></br>
                 </div>
             </div>
         </form>
-        <div><button type="submit" class="btnLog" OnClick="loginFnc()">Login</button></div>
-    </div>
-
-    <div class="newacct text-center">
-        <h4>No Account?  Create one <a href="newAcct.html" style="color: #9b59b9">here!</a></h4>
+        <div><button type="submit" class="btnLog" OnClick="loginFnc()">Submit!</button></div>
     </div>
 
     <div class="logfooter"></div>
-
-    <script>
-        function loginFnc() {
-            window.location.replace("index.html");
-        }
-    </script>
 </body>
 </html>
