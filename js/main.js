@@ -1,5 +1,5 @@
 // FAQ Accordion
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const faqContainer = document.querySelector('.faq-content');
 
     faqContainer.addEventListener('click', (e) => {
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-});
+});*/
 
 // Mobile Menu
 document.addEventListener('DOMContentLoaded', () => {

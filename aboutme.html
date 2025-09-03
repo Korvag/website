@@ -19,53 +19,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" href="images/fav2sized.png">
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/fav2sized.png" alt="logo">
-                </a>
-            </div>
-
-            <!-- Regular Menu -->
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="aboutme.html">About Me</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="login.html">
-                            <i class="fas fa-user"></i> Log In
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Hamburger button -->
-            <button id="hamburger-button" class="hamburger-button">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-            </button>
-
-            <!-- Mobile Menu -->
-            <div class="mobile-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="aboutme.html">About Me</a>
-                    </li>
-                    <li>
-                        <a class="btn" href="login.html">
-                            <i class="fas fa-user"></i> Log In
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
     
     <!-- Body -->
     <section class="hero">
@@ -87,56 +41,18 @@
         </div>
     </section>
 
-<!-- Footer -->
-    <footer class="footer bg-black">
-        <div class="container">
-            <div class="footer-grid">
-                <div>
-                    <div class="container">
-                        <a href="index.html"><img src="images/fav2sized.png" alt="logo"></a>
-                        <!--<div class="card">
-                            <h4>Subscribe to News!</h4>
-                            <p class="text-sm">
-                                Subscribe pls!
-                            </p>
-                            <form>
-                                <input type="email" id="email" placeholder="Enter your email">
-                                <button type="submit" class="btn btn-primary btn-block">Subscribe</button>
-                            </form>
-                        </div>-->
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/benjamin-toner/" class="fab fa-linkedin fa-2xl"></a>
-                            <a href="https://www.github.com/Korvag/Korvag" class="fab fa-github fa-2xl"></a>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div>
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="aboutme.html">About Me</a></li>
-                        <!--<li><a href="#">Our Process</a></li>
-                        <li><a href="#">Join Our Team</a></li>-->
-                    </ul>
-                </div>
-                <div>
-                    <h4>Resources</h4>
-                    <ul>
-                        <!--<li><a href="#">News</a></li>
-                        <li><a href="#">Research</a></li>-->
-                        <li><a href="https://github.com/Korvag/Korvag">Recent Projects</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="#"></a>bptoner123@gmail.com</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
     <script src="js/main.js"></script>
+    <script>
+        fetch('/header.html')
+            .then(response => response.text())
+            .then(html => {document.getElementById('header').innerHTML = html;})
+    </script>
+    <script>
+        fetch('/footer.html')
+            .then(response => response.text())
+            .then(html => {document.getElementById('footer').innerHTML = html;})
+    </script>
 </body>
 </html>
