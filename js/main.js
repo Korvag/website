@@ -45,3 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
 function loginFnc() {
     window.location.replace("index.html");
 }
+
+// Load header
+fetch('/header.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('header').innerHTML = html;
+    });
+
+// Load footer
+fetch('/footer.html')
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('footer').innerHTML = html;
+    });
